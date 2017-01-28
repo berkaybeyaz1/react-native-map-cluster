@@ -22,7 +22,7 @@ Second, you have to link `react-native-maps` library for successfully work
 | onRegionChange | function | --- | as you wish | If you need currently region data you have to add this |
 | style | object | `...StyleSheet.absoluteFillObject` |🐸 / 👍| If you need styling map you have to add this. |
 | zoomLevel| integer | 12 |🐸| It indicates the last click on these clusters |
-| clusterRadius | integer | 300 |🐸 / 👍| It's determine clusters point count |
+| clusterRadius | integer | 300 |🐸 / 👍| It's determine clusters point area |
 | clusterPadding | integer | 0 |🐸 / 👍| It's determine clusters closenes |
 ## Props API
 ### region
