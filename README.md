@@ -20,7 +20,9 @@ Second, you have to link `react-native-maps` library for successfully work
 | renderCluster | function | Our own cluster views |  🐸 / 👍 | If you want to customize marker clusters you have to add to props |
 | isTouchable | boolean | true |🐸| http://i.giphy.com/pWNvoO3IdudYA.gif |
 | onRegionChange | function | --- | as you wish | If you need currently region data you have to add this |
-| style | object | `...StyleSheet.absoluteFillObject` | as you wish | If you need styling map you have to add this. |
+| style | object | `...StyleSheet.absoluteFillObject` | 🐸 / 👍  | If you need styling map you have to add this. |
+| zoomLevel| integer | 12 | 🐸 | It indicates the last click on these clusters |
+| clusterRadius | integer | 300 | 🐸 / 👍 | It's determine clusters point count |
 
 ## Props API
 ### region
@@ -106,3 +108,5 @@ Usage:
 ```javascript 
     onRegionChange={ (region) => this.yourFunction(region) }
 ```
+## LICENSE
+MIT
