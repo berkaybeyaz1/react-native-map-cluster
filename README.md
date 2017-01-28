@@ -11,8 +11,8 @@ Second, you have to link `react-native-maps` library for successfully work
 ## Component API 
 | Prop Name  | Type  | Default  | Required | Note  |
 |:-:|:-:|:-:|:-:|---|
-| latitudeZoom | boolean  | 4  | 👍  | This is latitudeDelta number between 1 and 10 is required 
-| longitudeZoom  | boolean  | 4  | 👍  | This for longitudeDelta number between 1 and 10 is required
+| latitudeZoom | integer  | 4  | 👍  | This is latitudeDelta number between 1 and 10 is required 
+| longitudeZoom  | integer  | 4  | 👍  | This for longitudeDelta number between 1 and 10 is required
 | initialRegion  | object  | --  | 👍 | That is requirement for maps initial region |
 | region | object | -- | 👍 | This is for markers coordinates data #lookthatapi | 
 | renderMap | function | `<MapView />` | 🐸 | You have to add a map view with a child if you want to customize map view |
