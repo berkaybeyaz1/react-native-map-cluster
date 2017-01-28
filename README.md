@@ -29,18 +29,50 @@ Second, you have to link `react-native-maps` library for successfully work
 Firstly region props using [geojson](http://geojson.org/geojson-spec.html) and you have to convert data for compilability 
 Example : 
 ```javascript
-    type: 'Map',
-    properties: {
-        lat_x: "Point Latitude",
-        long_x: "Point Longitude",
-    },
-    geometry: {
-        type: 'Point',
-        coordinates: [
-            longitude,
-            latitude
-        ]
-    }
+    type: 'MapCollection',
+    features: [
+        type: 'Map',
+        properties: {
+            lat_x: "Point Latitude",
+            long_x: "Point Longitude",
+        },
+        geometry: {
+            type: 'Point',
+            coordinates: [
+                longitude,
+                latitude
+            ]
+        }
+    ]
+```
+Example converter:
+```javascript 
+_convertPoints(data){
+    const results = {
+        type: "MapCollection",
+        features: []
+    };
+    data.map((value, key) => {
+        array = {
+            type: 'Map',
+            properties: {
+                id: value.id,
+                name: value.name,
+                lat_x: value.lat,
+                long_x: value.long,
+            },
+            geometry: {
+                type: 'Point',
+                coordinates: [
+                    value.long,
+                    value.lat
+                ]
+            }
+        }
+    results.features.push(array);
+    });
+return results;
+}
 ```
 If you need some data add in properties key with `propertiesName: value` like this
 
