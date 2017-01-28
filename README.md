@@ -11,19 +11,19 @@ Second, you have to link `react-native-maps` library for successfully work
 ## Component API 
 | Prop Name  | Type  | Default  | Required | Note  |
 |:-:|:-:|:-:|:-:|---|
-| latitudeZoom | integer  | 4  | 👍  | This is latitudeDelta number between 1 and 10 is required 
-| longitudeZoom  | integer  | 4  | 👍  | This for longitudeDelta number between 1 and 10 is required
-| initialRegion  | object  | --  | 👍 | That is requirement for maps initial region |
-| region | object | -- | 👍 | This is for markers coordinates data #lookthatapi | 
-| renderMap | function | `<MapView />` | 🐸 | You have to add a map view with a child if you want to customize map view |
-| renderMarker | function | `<MapView.Marker />` | 🐸 / 👍 | If you want to customize markers you have to add to props |
-| renderCluster | function | Our own cluster views |  🐸 / 👍 | If you want to customize marker clusters you have to add to props |
+| latitudeZoom | integer  | 4  |👍| This is latitudeDelta number between 1 and 10 is required 
+| longitudeZoom  | integer  | 4  |👍| This for longitudeDelta number between 1 and 10 is required
+| initialRegion  | object  | --  |👍| That is requirement for maps initial region |
+| region | object | -- |👍| This is for markers coordinates data #lookthatapi | 
+| renderMap | function | `<MapView />` |🐸| You have to add a map view with a child if you want to customize map view |
+| renderMarker | function | `<MapView.Marker />` |🐸 / 👍| If you want to customize markers you have to add to props |
+| renderCluster | function | Our own cluster views |🐸 / 👍| If you want to customize marker clusters you have to add to props |
 | isTouchable | boolean | true |🐸| http://i.giphy.com/pWNvoO3IdudYA.gif |
 | onRegionChange | function | --- | as you wish | If you need currently region data you have to add this |
-| style | object | `...StyleSheet.absoluteFillObject` | 🐸 / 👍  | If you need styling map you have to add this. |
-| zoomLevel| integer | 12 | 🐸 | It indicates the last click on these clusters |
-| clusterRadius | integer | 300 | 🐸 / 👍 | It's determine clusters point count |
-
+| style | object | `...StyleSheet.absoluteFillObject` |🐸 / 👍| If you need styling map you have to add this. |
+| zoomLevel| integer | 12 |🐸| It indicates the last click on these clusters |
+| clusterRadius | integer | 300 |🐸 / 👍| It's determine clusters point count |
+| clusterPadding | integer | 0 |🐸 / 👍| It's determine clusters closenes |
 ## Props API
 ### region
 Firstly region props using [geojson](http://geojson.org/geojson-spec.html) and you have to convert data for compilability 
